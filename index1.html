@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Freshers Resume</title>
+   <style>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: moveInTop 1s ease-out;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    animation: moveInRight 1s ease-out;
+}
+
+section {
+    margin-bottom: 30px;
+    animation: moveInLeft 1s ease-out;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    animation: moveInBottom 1s ease-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}</style>
+</head>
+<body>
+    <header>
+        <h1>Freshers Resume</h1>
+    </header>
+
+    <main>
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong>Shino D</p>
+            <p><strong>Email:</strong> shino311203@gmail.com</p>
+            <p><strong>Phone:</strong> 123-456-7890</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's Degree in Computer Science</li>
+                <li>Manonmaniyam Sundharanar University</li>
+                <li>Graduation Year: 2024</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: Lorem ipsum dolor sit amet</li>
+                <li>Project 2: Consectetur adipiscing elit</li>
+                <li>Project 3: Sed do eiusmod tempor incididunt ut labore</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Freshers Resume. All rights reserved.</p>
+    </footer>
+
+    <script >window.addEventListener('load', function() {
+        const sections = document.querySelectorAll('section');
+    
+        sections.forEach(function(section) {
+            section.classList.add('animation');
+        });
+    });</script>
+</body>
+</html>
